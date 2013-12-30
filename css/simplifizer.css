@@ -1,0 +1,20 @@
+/*
+ * simplifizer Front-end CSS framework
+ * full version with all functions
+ * licensed by FESL/BSD
+ * http://www.flyeyes.cz/licenses/fesl-bsd.txt
+ * 
+ * Authors:
+ * Vojtech Hutla - vojtovo.eu
+ * Ondrej Cach - ondrca.eu
+ */
+
+html, body {
+ margin: 0;
+ padding: 0;
+}
+
+html {
+ font-family: sans-serif, Arial;
+}
+
