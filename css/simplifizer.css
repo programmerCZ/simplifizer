@@ -5,16 +5,81 @@
  * http://www.flyeyes.cz/licenses/fesl-bsd.txt
  * 
  * Authors:
- * Vojtech Hutla - vojtovo.eu
+ * Vojtech Hutla
  * Ondrej Cach - ondrca.eu
+ * 
+ * copyright (c) 2014 flyeyes software
  */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 html, body {
  margin: 0;
  padding: 0;
 }
 
-html {
- font-family: sans-serif, Arial;
+body {
+ font-family: 'Open Sans', sans-serif;
 }
 
+/* česky komentované - pro zachování přehlednosti
+ * 
+ * prvky jsou rozděleny do skupin, které jsou po sobě následovně:
+ * 	page - stránka, její rozvržení (container, cover, footer, header, ...)
+ *  text - písma a textové prvky (p, h1, a:link, ...)
+ *  forms - styly forem, inputů, tabulek, ...
+ *  other - styly nových prvků (navigation, button, ...)
+ * 
+ * PO DOKONČENÍ KOMENTÁŘE SMAŽTE!!!
+ * 
+ */
+
+/* Page */
+.container {
+ position: relative;
+ width: 60%;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 10px;
+}
+
+.cover {
+ position: relative;
+ width: 100%;
+ min-height: 160px;
+ padding-top: 100px;
+ padding-bottom: 100px;
+ background-image: url(../img/texture.png);
+}
+
+.navbar {
+ width: 100%;
+ height: 60px;
+}
+
+@media screen and (max-width: 960px){
+ .container {
+  width: 95%;
+ }
+}
+
+/* Text */
+h1, h2 {
+    line-height: 1;
+}
+
+h1 {
+ font-size: 40px;
+}
+
+h2 {
+ font-size: 30px;
+}
+
+/* Forms */
+
+/* Other */
+.navbar-dark {
+ color: #F8F8F8;
+ background-color: #222222;
+}
